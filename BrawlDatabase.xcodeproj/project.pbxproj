@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		875E825419043D48EACC92E2 /* Pods_BrawlDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BDA2C741647E04ABB3EA3A /* Pods_BrawlDatabase.framework */; };
+		DD64BE4021CA510E00FAC245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE3F21CA510E00FAC245 /* AppDelegate.swift */; };
+		DD64BE4721CA510F00FAC245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD64BE4621CA510F00FAC245 /* Assets.xcassets */; };
+		DD64BE4A21CA510F00FAC245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD64BE4821CA510F00FAC245 /* LaunchScreen.storyboard */; };
+		DD64BE5521CA515C00FAC245 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE5321CA515C00FAC245 /* MainViewController.swift */; };
+		DD64BE5621CA515C00FAC245 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD64BE5421CA515C00FAC245 /* MainViewController.xib */; };
+		DD64BE5B21CA51DB00FAC245 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE5921CA51DB00FAC245 /* TaskCell.swift */; };
+		DD64BE5C21CA51DB00FAC245 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD64BE5A21CA51DB00FAC245 /* TaskCell.xib */; };
+		DD64BE5F21CA53CD00FAC245 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE5E21CA53CD00FAC245 /* Task.swift */; };
+		DD64BE6321CA5A6200FAC245 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE6121CA5A6200FAC245 /* AddViewController.swift */; };
+		DD64BE6421CA5A6200FAC245 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD64BE6221CA5A6200FAC245 /* AddViewController.xib */; };
+		DD64BE6721CA64BA00FAC245 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE6621CA64BA00FAC245 /* Repository.swift */; };
+		DD64BE6921CA655A00FAC245 /* LocalTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64BE6821CA655A00FAC245 /* LocalTaskRepository.swift */; };
+		DDBB0DCD21CA665D000A0274 /* TaskEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB0DCC21CA665D000A0274 /* TaskEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14BDA2C741647E04ABB3EA3A /* Pods_BrawlDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrawlDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A05A6892A6C8D6A55E78304 /* Pods-BrawlDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrawlDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrawlDatabase/Pods-BrawlDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		DD64BE3C21CA510E00FAC245 /* BrawlDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrawlDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD64BE3F21CA510E00FAC245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD64BE4621CA510F00FAC245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD64BE4921CA510F00FAC245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD64BE4B21CA510F00FAC245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD64BE5321CA515C00FAC245 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD64BE5421CA515C00FAC245 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		DD64BE5921CA51DB00FAC245 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		DD64BE5A21CA51DB00FAC245 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		DD64BE5E21CA53CD00FAC245 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DD64BE6121CA5A6200FAC245 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		DD64BE6221CA5A6200FAC245 /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		DD64BE6621CA64BA00FAC245 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DD64BE6821CA655A00FAC245 /* LocalTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTaskRepository.swift; sourceTree = "<group>"; };
+		DDBB0DCC21CA665D000A0274 /* TaskEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEntity.swift; sourceTree = "<group>"; };
+		EBFDD3B16C04A177DA8CD489 /* Pods-BrawlDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrawlDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrawlDatabase/Pods-BrawlDatabase.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD64BE3921CA510E00FAC245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875E825419043D48EACC92E2 /* Pods_BrawlDatabase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97603CA2BF997A703DE9323B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A05A6892A6C8D6A55E78304 /* Pods-BrawlDatabase.debug.xcconfig */,
+				EBFDD3B16C04A177DA8CD489 /* Pods-BrawlDatabase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7DFECFCB171639294DB0EB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14BDA2C741647E04ABB3EA3A /* Pods_BrawlDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD64BE3321CA510E00FAC245 = {
+			isa = PBXGroup;
+			children = (
+				DD64BE3E21CA510E00FAC245 /* BrawlDatabase */,
+				DD64BE3D21CA510E00FAC245 /* Products */,
+				97603CA2BF997A703DE9323B /* Pods */,
+				D7DFECFCB171639294DB0EB4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD64BE3D21CA510E00FAC245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE3C21CA510E00FAC245 /* BrawlDatabase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD64BE3E21CA510E00FAC245 /* BrawlDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB0DCB21CA6646000A0274 /* Entities */,
+				DD64BE6521CA64A000FAC245 /* Repositories */,
+				DD64BE5D21CA53BC00FAC245 /* Modelos */,
+				DD64BE5721CA518700FAC245 /* Cells */,
+				DD64BE5121CA513400FAC245 /* ViewControllers */,
+				DD64BE3F21CA510E00FAC245 /* AppDelegate.swift */,
+				DD64BE4621CA510F00FAC245 /* Assets.xcassets */,
+				DD64BE4821CA510F00FAC245 /* LaunchScreen.storyboard */,
+				DD64BE4B21CA510F00FAC245 /* Info.plist */,
+			);
+			path = BrawlDatabase;
+			sourceTree = "<group>";
+		};
+		DD64BE5121CA513400FAC245 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE6021CA5A2C00FAC245 /* AddViewController */,
+				DD64BE5221CA514700FAC245 /* MainViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD64BE5221CA514700FAC245 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE5321CA515C00FAC245 /* MainViewController.swift */,
+				DD64BE5421CA515C00FAC245 /* MainViewController.xib */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		DD64BE5721CA518700FAC245 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE5821CA51AA00FAC245 /* TableCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD64BE5821CA51AA00FAC245 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE5921CA51DB00FAC245 /* TaskCell.swift */,
+				DD64BE5A21CA51DB00FAC245 /* TaskCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		DD64BE5D21CA53BC00FAC245 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE5E21CA53CD00FAC245 /* Task.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		DD64BE6021CA5A2C00FAC245 /* AddViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE6121CA5A6200FAC245 /* AddViewController.swift */,
+				DD64BE6221CA5A6200FAC245 /* AddViewController.xib */,
+			);
+			path = AddViewController;
+			sourceTree = "<group>";
+		};
+		DD64BE6521CA64A000FAC245 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DD64BE6621CA64BA00FAC245 /* Repository.swift */,
+				DD64BE6821CA655A00FAC245 /* LocalTaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DDBB0DCB21CA6646000A0274 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB0DCC21CA665D000A0274 /* TaskEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD64BE3B21CA510E00FAC245 /* BrawlDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD64BE4E21CA510F00FAC245 /* Build configuration list for PBXNativeTarget "BrawlDatabase" */;
+			buildPhases = (
+				FFCA6CBA153C1D0AF46462DF /* [CP] Check Pods Manifest.lock */,
+				DD64BE3821CA510E00FAC245 /* Sources */,
+				DD64BE3921CA510E00FAC245 /* Frameworks */,
+				DD64BE3A21CA510E00FAC245 /* Resources */,
+				A246453B9643B8F491059B9F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrawlDatabase;
+			productName = BrawlDatabase;
+			productReference = DD64BE3C21CA510E00FAC245 /* BrawlDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD64BE3421CA510E00FAC245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "IGNACIO OLAGORTA VERA";
+				TargetAttributes = {
+					DD64BE3B21CA510E00FAC245 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = DD64BE3721CA510E00FAC245 /* Build configuration list for PBXProject "BrawlDatabase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD64BE3321CA510E00FAC245;
+			productRefGroup = DD64BE3D21CA510E00FAC245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD64BE3B21CA510E00FAC245 /* BrawlDatabase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD64BE3A21CA510E00FAC245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD64BE5C21CA51DB00FAC245 /* TaskCell.xib in Resources */,
+				DD64BE4A21CA510F00FAC245 /* LaunchScreen.storyboard in Resources */,
+				DD64BE6421CA5A6200FAC245 /* AddViewController.xib in Resources */,
+				DD64BE5621CA515C00FAC245 /* MainViewController.xib in Resources */,
+				DD64BE4721CA510F00FAC245 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A246453B9643B8F491059B9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BrawlDatabase/Pods-BrawlDatabase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrawlDatabase/Pods-BrawlDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFCA6CBA153C1D0AF46462DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrawlDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD64BE3821CA510E00FAC245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD64BE6321CA5A6200FAC245 /* AddViewController.swift in Sources */,
+				DD64BE5F21CA53CD00FAC245 /* Task.swift in Sources */,
+				DD64BE4021CA510E00FAC245 /* AppDelegate.swift in Sources */,
+				DDBB0DCD21CA665D000A0274 /* TaskEntity.swift in Sources */,
+				DD64BE5B21CA51DB00FAC245 /* TaskCell.swift in Sources */,
+				DD64BE5521CA515C00FAC245 /* MainViewController.swift in Sources */,
+				DD64BE6921CA655A00FAC245 /* LocalTaskRepository.swift in Sources */,
+				DD64BE6721CA64BA00FAC245 /* Repository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD64BE4821CA510F00FAC245 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD64BE4921CA510F00FAC245 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD64BE4C21CA510F00FAC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD64BE4D21CA510F00FAC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD64BE4F21CA510F00FAC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A05A6892A6C8D6A55E78304 /* Pods-BrawlDatabase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BrawlDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = utad.BrawlDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD64BE5021CA510F00FAC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBFDD3B16C04A177DA8CD489 /* Pods-BrawlDatabase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BrawlDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = utad.BrawlDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD64BE3721CA510E00FAC245 /* Build configuration list for PBXProject "BrawlDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD64BE4C21CA510F00FAC245 /* Debug */,
+				DD64BE4D21CA510F00FAC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD64BE4E21CA510F00FAC245 /* Build configuration list for PBXNativeTarget "BrawlDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD64BE4F21CA510F00FAC245 /* Debug */,
+				DD64BE5021CA510F00FAC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD64BE3421CA510E00FAC245 /* Project object */;
+}

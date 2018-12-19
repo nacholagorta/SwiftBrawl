@@ -1,0 +1,6 @@
+framework module Pods_BrawlDatabase {
+  umbrella header "Pods-BrawlDatabase-umbrella.h"
+
+  export *
+  module * { export * }
+}
